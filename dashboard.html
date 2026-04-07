@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Northstar Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="dashboard-page">
+  <div class="page-glow page-glow-left"></div>
+  <div class="page-glow page-glow-right"></div>
+
+  <header class="dashboard-header fade-up">
+    <div>
+      <span class="eyebrow">Northstar Portal</span>
+      <h1>Welcome, <span id="userDisplayName">User</span></h1>
+    </div>
+    <button id="logoutButton" class="secondary-button">Log out</button>
+  </header>
+
+  <main class="dashboard-shell fade-up delay-1">
+    <section class="dashboard-card dashboard-card-featured">
+      <span class="eyebrow">Overview</span>
+      <h2>Signed in successfully</h2>
+      <p>This is a front-end demo dashboard shown after login. The session is stored in localStorage until the user logs out.</p>
+      <div class="stats-grid">
+        <article class="stat-item"><strong>14</strong><span>Active projects</span></article>
+        <article class="stat-item"><strong>08</strong><span>Reports pending</span></article>
+        <article class="stat-item"><strong>99.9%</strong><span>System uptime</span></article>
+      </div>
+    </section>
+
+    <section class="dashboard-card">
+      <span class="eyebrow">Included flow</span>
+      <ul class="feature-list">
+        <li>Responsive login page with side image layout</li>
+        <li>Forgot password screen with validation</li>
+        <li>Front-end login and logout functionality</li>
+        <li>Animated transitions and refined styling</li>
+      </ul>
+    </section>
+
+    <section class="dashboard-card">
+      <span class="eyebrow">Design direction</span>
+      <p>Clean typography, soft neutral colors, elegant spacing, rounded cards, and subtle motion inspired by modern product interfaces.</p>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

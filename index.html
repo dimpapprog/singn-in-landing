@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In | Northstar Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="auth-page">
+  <div class="page-glow page-glow-left"></div>
+  <div class="page-glow page-glow-right"></div>
+
+  <main class="auth-shell">
+    <section class="auth-panel auth-panel-form fade-up">
+      <div class="brand-row">
+        <a href="index.html" class="brand-mark" aria-label="Northstar Portal home">
+          <span class="brand-mark-icon"></span>
+          <span>Northstar</span>
+        </a>
+      </div>
+
+      <div class="auth-copy">
+        <span class="eyebrow">Welcome back</span>
+        <h1>Sign in to your workspace</h1>
+        <p>
+          Access your dashboard, projects, and reports from one secure place with a
+          clean, product-style login experience.
+        </p>
+      </div>
+
+      <div class="demo-credentials">
+        <div>
+          <span>Demo email</span>
+          <strong>demo@northstar.com</strong>
+        </div>
+        <div>
+          <span>Demo password</span>
+          <strong>Demo123!</strong>
+        </div>
+      </div>
+
+      <form id="loginForm" class="auth-form" novalidate>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <div class="input-shell">
+            <span class="input-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5v-9Zm1.8-.5L12 11.55 18.2 7H5.8Zm12.7 1.32-5.91 4.34a1 1 0 0 1-1.18 0L5.5 8.32v8.18c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V8.32Z"/></svg>
+            </span>
+            <input type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email" required />
+          </div>
+          <small class="error-text" data-error-for="email"></small>
+        </div>
+
+        <div class="field-group">
+          <div class="label-row">
+            <label for="password">Password</label>
+            <a href="forgot-password.html" class="text-link">Forgot password?</a>
+          </div>
+          <div class="input-shell input-shell-password">
+            <span class="input-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 10V8.75a4 4 0 1 1 8 0V10h.75A2.25 2.25 0 0 1 19 12.25v6.5A2.25 2.25 0 0 1 16.75 21h-9.5A2.25 2.25 0 0 1 5 18.75v-6.5A2.25 2.25 0 0 1 7.25 10H8Zm1.5 0h5V8.75a2.5 2.5 0 1 0-5 0V10Zm2.5 3a1.5 1.5 0 0 0-.75 2.8v1.2a.75.75 0 0 0 1.5 0v-1.2A1.5 1.5 0 0 0 12 13Z"/></svg>
+            </span>
+            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required />
+            <button type="button" class="toggle-password" id="togglePassword" aria-label="Show or hide password">Show</button>
+          </div>
+          <small class="error-text" data-error-for="password"></small>
+        </div>
+
+        <div class="inline-row">
+          <label class="check-wrap">
+            <input type="checkbox" id="rememberMe" />
+            <span>Keep me signed in</span>
+          </label>
+        </div>
+
+        <button type="submit" class="primary-button" id="loginButton">Sign in</button>
+        <p class="form-message" id="loginMessage"></p>
+      </form>
+    </section>
+
+    <aside class="auth-panel auth-panel-visual fade-up delay-1">
+      <div class="visual-image-wrap">
+        <div class="visual-overlay"></div>
+        <img src="assets/img/side-art.png" alt="Decorative abstract side artwork" class="visual-image" />
+      </div>
+      <div class="visual-copy">
+        <span class="eyebrow eyebrow-light">Secure access</span>
+        <h2>Simple. Elegant. Professional.</h2>
+        <p>
+          Crafted as a polished front-end concept with responsive layout, smooth interactions,
+          and a modern visual balance between form and imagery.
+        </p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
